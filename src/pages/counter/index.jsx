@@ -1,5 +1,5 @@
-import Decrement from "../components/decrement";
-import Increment from "../components/increment";
+import Decrement from "../../components/decrement";
+import Increment from "../../components/increment";
 import { useState } from 'react';
 
 function Container() {
@@ -16,13 +16,13 @@ function Container() {
         }
     }
     
-    return <>
+    return <div className="mx-auto w-50 border border-primary rounded my-5">
         <h1 className="text-center text-secondary fw-bold">{number}</h1>
         <div className="w-50 mx-auto mt-5 d-flex justify-content-between">
             <Decrement decrement={decrement}  count="number"/>
             <Increment increment={increment} count="number"/>
         </div>
-    </>
+    </div>
 }
 
 export default Container
