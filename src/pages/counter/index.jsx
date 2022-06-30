@@ -1,5 +1,5 @@
-import Decrement from "../../components/decrement";
-import Increment from "../../components/increment";
+import Decrement from "../../components/counterActions/decrement";
+import Increment from "../../components/counterActions/increment";
 import { useState } from 'react';
 
 function Container() {

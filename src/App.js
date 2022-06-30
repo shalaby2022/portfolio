@@ -6,6 +6,8 @@ import Container from './pages/counter';
 import Home from './pages/home';
 import Products from './pages/products';
 import Prodcut from './pages/products/Product';
+import Todo from './pages/todo/Todo';
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
             <Route path="/about" element={<About/>}/>  
             <Route path="/Products" element={<Products/>}/>  
             <Route path="/Products/:id" element={<Prodcut/>}/>  
+            <Route path="/todo" element={<Todo/>}/>  
             <Route path="/counter" element={<Container/>}/>  
           </Routes>
     </BrowserRouter>
