@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Button, Card } from "react-bootstrap";
 import { Link } from 'react-router-dom'
-
+import { Spinner } from 'react-bootstrap'
 
 
 const Products = () => {
@@ -34,7 +34,11 @@ const Products = () => {
                 </Card>
             </Link>
             }
-        ) : (<p className="text-danger fs-1 fw-bold my-5 text-center">Loading ......</p>)}
+        ) : (   
+            <Spinner animation="border" role="status" className="text-danger  fw-bold my-5 mx-auto">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>
+            )}
         
     </div>
 }

@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Navbar from './components/navbar';
+import Footer from './components/footer';
+import Navigator from './components/navbar';
 import About from './pages/about';
 import Container from './pages/counter';
 import Home from './pages/home';
@@ -13,15 +14,16 @@ import Todo from './pages/todo/Todo';
 function App() {
 
   return  <BrowserRouter>
-          <Navbar/>
+          <Navigator/>
           <Routes>
-            <Route path="/home" element={<Home/>}/>  
+            <Route path="/" element={<Home/>}/>  
             <Route path="/about" element={<About/>}/>  
             <Route path="/Products" element={<Products/>}/>  
             <Route path="/Products/:id" element={<Prodcut/>}/>  
             <Route path="/todo" element={<Todo/>}/>  
             <Route path="/counter" element={<Container/>}/>  
           </Routes>
+          {/* <Footer/> */}
     </BrowserRouter>
 }
 

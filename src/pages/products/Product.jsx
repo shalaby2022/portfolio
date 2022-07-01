@@ -17,7 +17,6 @@ const Prodcut = () => {
             .then(json=>setProduct(json))
     }
     const [product,setProduct] = useState(null)
-    console.log(product)
 
     return <div className='mx-auto w-50 m-4'>
         { product ?  (<Card className="border p-1 text-center" style={{height: '400px'}}>
