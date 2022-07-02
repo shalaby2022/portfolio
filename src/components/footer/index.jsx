@@ -1,21 +1,17 @@
-
-import { Link } from 'react-router-dom';
-import './Footer.css'
-
-
+import "./Footer.css";
 
 const Footer = () => {
-    
-    return <div className="bg-dark text-white position maxHeight">
-        <div className='container'>
-            <h4 className="text-danger lineHieght">Find Me on :</h4>
-            <div>
-                <ul>
-                    <li ><Link to="/https://www.facebook.com/shalpy1" target="_blank">imgsadsadasdsa</Link></li>
-                </ul>
+    return (
+        <div
+            bg="dark"
+            variant="dark"
+            className="footer fixed-bottom d-flex align-items-center"
+        >
+            <div className="container py-2">
+                <h4 className="text-start">Find Me Online :</h4>
             </div>
         </div>
-    </div>
-}
+    );
+};
 
-export default Footer
+export default Footer;

@@ -1,15 +1,4 @@
-.lineHieght {
-    line-height: 1;
-    padding-top: 20px;
-}
-
-.position {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.maxHeight {
-    max-height: 60px;
+.footer{
+    background-color: #212529;
+    color: #fff;
 }
